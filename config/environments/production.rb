@@ -106,11 +106,10 @@ Rails.application.configure do
     address:              ENV['SMTP_ADDRESS'],
     port:                 ENV['SMTP_PORT'],
     domain:               ENV['SMTP_DOMAIN'],
-    ssl:                  false,
-    tls:                  false,
-    openssl_verify_mode:  false,
-    enable_starttls:      false,
-    enable_starttls_auto: false
+    user_name:            ENV['SMTP_USERNAME'],
+    password:             ENV['SMTP_PASSWORD'],
+    authentication:       'plain',
+    enable_starttls_auto: true
   }
 
   if ENV['ROOT_DOMAIN']
