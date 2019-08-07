@@ -75,7 +75,7 @@ describe TOTPService do
     let(:create_params) do
       {
         generate: true,
-        issuer: 'Barong',
+        issuer: 'Blast Exchange',
         account_name: 'email',
         qr_size: 300
       }
