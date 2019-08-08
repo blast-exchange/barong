@@ -4,7 +4,7 @@ class TOTPService
   Error = Class.new(StandardError)
 
   class <<self
-    ISSUER_NAME = 'Barong'
+    ISSUER_NAME = 'Blast Exchange'
   
     def server_available?
       read_data('sys/health').present?
