@@ -2,7 +2,7 @@
 # email and level are required for users
 #
 users:
-  - email: <%= ENV.fetch("ADMIN_EMAIL", "admin@barong.io") %>
+  - email: <%= ENV.fetch("ADMIN_EMAIL", "admin@blastexchange.com") %>
     password: <%= ENV.fetch("ADMIN_PASSWORD", nil) %>
     role: "admin"
     state: "active"

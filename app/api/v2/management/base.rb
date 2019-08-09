@@ -29,7 +29,7 @@ module API::V2
 
       add_swagger_documentation base_path: '/api/v2/management',
       info: {
-        title: 'Barong',
+        title: 'Blast Exchange',
         description: 'Management API for barong OAuth server'
       },
       security_definitions: {
