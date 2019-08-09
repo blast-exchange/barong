@@ -4,7 +4,7 @@ class TOTPService
   Error = Class.new(StandardError)
 
   class <<self
-    ISSUER_NAME = 'Barong'
+    ISSUER_NAME = 'Blast Exchange'
   
     def server_available?
       read_data('sys/health').present?
@@ -24,7 +24,7 @@ class TOTPService
     def create(uid, email)
       write_data(totp_key(uid),
                  generate: true,
-                 issuer: ENV.fetch('APP_NAME', 'Barong'),
+                 issuer: ENV.fetch('APP_NAME', 'Blast Exchange'),
                  account_name: email,
                  qr_size: 300)
     end
